@@ -6,67 +6,40 @@
     <description>Recent content in Tags on Website of Yafei Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>css</title>
-      <link>https://yafeigao.github.io/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>3D Pose Estimation</title>
+      <link>https://yafeigao.github.io/tags/3d-pose-estimation/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yafeigao.github.io/tags/css/</guid>
+      <guid>https://yafeigao.github.io/tags/3d-pose-estimation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://yafeigao.github.io/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Hand-Object Dataset</title>
+      <link>https://yafeigao.github.io/tags/hand-object-dataset/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yafeigao.github.io/tags/html/</guid>
+      <guid>https://yafeigao.github.io/tags/hand-object-dataset/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>https://yafeigao.github.io/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Metric Learning</title>
+      <link>https://yafeigao.github.io/tags/metric-learning/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yafeigao.github.io/tags/markdown/</guid>
+      <guid>https://yafeigao.github.io/tags/metric-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>privacy</title>
-      <link>https://yafeigao.github.io/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Variational Deep Network</title>
+      <link>https://yafeigao.github.io/tags/variational-deep-network/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yafeigao.github.io/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://yafeigao.github.io/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yafeigao.github.io/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://yafeigao.github.io/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yafeigao.github.io/tags/text/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emoji</title>
-      <link>https://yafeigao.github.io/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yafeigao.github.io/tags/emoji/</guid>
+      <guid>https://yafeigao.github.io/tags/variational-deep-network/</guid>
       <description></description>
     </item>
     

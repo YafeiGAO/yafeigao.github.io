@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Yafei Gao | Posts </title>
+    <title> Yafei Gao | VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -21,10 +21,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://yafeigao.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://yafeigao.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://yafeigao.github.io/post/">
+    <link rel="canonical" href="https://yafeigao.github.io/post/variational-object-aware-3d-hand-pose-from-a-single-rgb-image/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://yafeigao.github.io/post/index.xml" title="Website of Yafei Gao" />
     
     
     
@@ -35,8 +34,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yafeigao.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Call me Yafei:)"/>
+<meta name="twitter:title" content="VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image"/>
+<meta name="twitter:description" content="Project page of Variational Object-aware 3D Hand Pose from a Single RGB Image"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -91,7 +90,7 @@
                    title="">Home</a></li>
         
             
-            <li><a class="current"
+            <li><a 
                    href="/post/"
                         
                    title="">Posts</a></li>
@@ -113,22 +112,78 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2019</div>
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://yafeigao.github.io/post/variational-object-aware-3d-hand-pose-from-a-single-rgb-image/" title="VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image">VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</a>
-                                <div class="post-time"><span class="date">Jun 22</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sat, Jun 22, 2019</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
                 
+            </div>
+
+            <h4 id="-paperhttpsieeexploreieeeorgdocument8770083--codehttpsgithubcomwangyidavo-handpose-">| <a href="https://ieeexplore.ieee.org/document/8770083">Paper</a> | <a href="https://github.com/wangyida/VO-handpose">Code</a> |</h4>
+<p><a href="https://youtu.be/tSTQ2NTqB4A"><img src="https://img.youtube.com/vi/tSTQ2NTqB4A/0.jpg" alt="VO-handpose"></a></p>
+<h2 id="abstract">Abstract</h2>
+<p>We propose an approach to estimate the 3D pose of a human hand while grasping objects from a single RGB image. Our approach is based on a probabilistic model implemented with deep architectures, which is used for regressing, respectively, the 2D hand joints heat maps and the 3D hand joints coordinates. We train our networks so to make our approach robust to large object- and self-occlusions, as commonly occurring with the task at hand. Using specialized latent variables, the deep architecture internally infers the category of the grasped object so to enhance the 3D reconstruction, based on the underlying assumption that objects of a similar category, i.e. with similar shape and size, are grasped in a similar way. Moreover, given the scarcity of 3D hand-object manipulation benchmarks with joint annotations, we propose a new annotated synthetic dataset with realistic images, hand masks, joint masks and 3D joints coordinates. Our approach is flexible as it does not require depth information, sensor calibration, data gloves, or finger markers. We quantitatively evaluate it on synthetic datasets achieving stateof-the-art accuracy, as well as qualitatively on real sequences.</p>
+<h2 id="dataset">Dataset</h2>
+<h4 id="despriction">Despriction</h4>
+<p>This dataset provides 11020 samples. Each sample provides:</p>
+<ul>
+<li>RGB image (320x320 pixels);</li>
+</ul>
+<ul>
+<li>Segmentation mask (320x320 pixels) for hand</li>
+<li>Segmentation mask (320x320 pixels) for object</li>
+<li>21 Keypoints for hand with their uv coordinates in the image frame and their xyz coordinates in the camera coordinate system</li>
+<li>Intrinsic Camera Matrix</li>
+</ul>
+<p>It was created with freely accessible character from <em>MakeHuman</em> and rendered with <a href="www.blender.org">Blender</a></p>
+<h4 id="download">Download</h4>
+<p>You can find download.py from <a href="https://github.com/wangyida/VO-handpose/blob/master/download.py">here</a>  the run it under your data folder:</p>
+<pre><code>python download.py -o ./&lt;DATA FOLDER&gt;/
+</code></pre>
+<h4 id="file-structures">File structures</h4>
+<p>After unziping <em>SynGraspHand.zip</em>, you will find our dataset in the following structure:</p>
+<pre><code>./                          : Root folder
+./images                    : Color images
+./mask_hand                 : Segmentation masks for hand
+./mask_object               : Segmentation masks for object
+./annotations.mat           : Key point annotations and camera matrices
+</code></pre>
+<h2 id="citation">Citation</h2>
+<p>Please consider cite VO-handpose for 3D hand pose estimation if you find it helpful.</p>
+<pre><code>@article{gao2019variational,
+  title={Variational Object-Aware 3-D Hand Pose From a Single RGB Image},
+  author={Gao, Yafei and Wang, Yida and Falco, Pietro and Navab, Nassir and Tombari, Federico},
+  journal={IEEE Robotics and Automation Letters},
+  volume={4},
+  number={4},
+  pages={4239--4246},
+  year={2019},
+  publisher={IEEE}
+}
+</code></pre>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/3d-pose-estimation/">3D Pose Estimation</a><a class="tag" href="/tags/hand-object-dataset/">Hand-Object Dataset</a><a class="tag" href="/tags/variational-deep-network/">Variational Deep Network</a><a class="tag" href="/tags/metric-learning/">Metric Learning</a></span>
+
+            </div>
+        </div>
+
+        
             
-        </ul>
+        
     </div>
+
 
         </div>
     </div>
