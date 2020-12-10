@@ -128,19 +128,22 @@
             </div>
 
             <p>Project Page of VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</p>
-<p>This work has been accepted in <em>IROS 2019</em> - also included in <em>IEEE Robotics and Automation Letters</em></p>
+<p>This work has been accepted in <em>IROS 2019</em> - <em>jointly presented in IEEE Robotics and Automation Letters</em></p>
 <p><strong><a href="https://www.linkedin.com/in/yafei-gao-0900a0131/?originalSubdomain=de">Yafei Gao</a>, <a href="https://wangyida.github.io/#about">Yida Wang</a>, <a href="http://campar.in.tum.de/Main/NassirNavab">Nassir Navab</a> and <a href="http://campar.in.tum.de/Main/FedericoTombari">Federico Tombari</a></strong>.</p>
-<p><strong>| <a href="https://ieeexplore.ieee.org/document/8770083">Paper</a> | <a href="https://github.com/wangyida/VO-handpose">Code</a> |</strong></p>
-<p><a href="https://youtu.be/tSTQ2NTqB4A"><img src="https://img.youtube.com/vi/tSTQ2NTqB4A/0.jpg" alt="VO-handpose"></a></p>
+<p><strong>| <a href="https://ieeexplore.ieee.org/document/8770083">Paper</a> |        <a href="https://github.com/wangyida/VO-handpose">Code</a> |
+<a href="https://youtu.be/tSTQ2NTqB4A">Video</a> |</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="abstract">Abstract</h2>
+<p><img src="../../images/vo-hand.png" alt="VO-handpose"></p>
 <p>We propose an approach to estimate the 3D pose of a human hand while grasping objects from a single RGB image. Our approach is based on a probabilistic model implemented with deep architectures, which is used for regressing, respectively, the 2D hand joints heat maps and the 3D hand joints coordinates. We train our networks so to make our approach robust to large object- and self-occlusions, as commonly occurring with the task at hand. Using specialized latent variables, the deep architecture internally infers the category of the grasped object so to enhance the 3D reconstruction, based on the underlying assumption that objects of a similar category, i.e. with similar shape and size, are grasped in a similar way. Moreover, given the scarcity of 3D hand-object manipulation benchmarks with joint annotations, we propose a new annotated synthetic dataset with realistic images, hand masks, joint masks and 3D joints coordinates. Our approach is flexible as it does not require depth information, sensor calibration, data gloves, or finger markers. We quantitatively evaluate it on synthetic datasets achieving stateof-the-art accuracy, as well as qualitatively on real sequences.</p>
 <h2 id="dataset">Dataset</h2>
 <h4 id="despriction">Despriction</h4>
 <p>This dataset provides 11020 samples. Each sample provides:</p>
-<pre><code>* RGB image (320x320 pixels); 
+<pre><code>+ RGB image (320x320 pixels); 
 + Segmentation mask (320x320 pixels) for hand
 + Segmentation mask (320x320 pixels) for object 
-+ 21 Keypoints for hand with their uv coordinates in the image frame and their xyz coordinates in the camera coordinate system
++ 21 Keypoints with 2D and 3D coordinates
 + Intrinsic Camera Matrix
 </code></pre>
 <p>It was created with freely accessible character from <em>MakeHuman</em> and rendered with <a href="www.blender.org">Blender</a></p>
@@ -169,6 +172,8 @@
   publisher={IEEE}
 }
 </code></pre>
+<h2 id="contact">Contact</h2>
+<p>Converning questions regarding to the dataset, please contact Yafei Gao (<a href="mailto:yafei.gao@gmx.de">yafei.gao@gmx.de</a>)</p>
 
         </div>
         <div class="post-footer">
