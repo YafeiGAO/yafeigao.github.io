@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yafeigao.github.io/about-me/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yafeigao.github.io/</loc>
     <lastmod>2019-06-22T00:00:00+00:00</lastmod>
   </url>
@@ -45,11 +50,6 @@
   <url>
     <loc>https://yafeigao.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yafeigao.github.io/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
