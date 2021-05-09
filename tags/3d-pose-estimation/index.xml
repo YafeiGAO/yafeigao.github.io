@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Sat, 22 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/3d-pose-estimation/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Survey on Image Inpainting Techniques: from PartialConv to Deepfill_v2</title>
+      <link>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</guid>
+      <description>Project Page of VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</description>
+    </item>
+    
+    <item>
       <title>VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</title>
       <link>https://yafeigao.github.io/post/variational-object-aware-3d-hand-pose-from-a-single-rgb-image/</link>
       <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
