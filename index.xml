@@ -6,7 +6,16 @@
     <description>Recent content on Website of Yafei Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill</title>
+      <link>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</guid>
+      <description>A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill_v2</description>
+    </item>
+    
     <item>
       <title>About Me</title>
       <link>https://yafeigao.github.io/about/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://yafeigao.github.io/about/</guid>
       <description>Hi, I’m Yafei, currently working as a deep learning-based visual application engineer.</description>
-    </item>
-    
-    <item>
-      <title>A Survey on Image Inpainting Techniques: from PartialConv to Deepfill_v2</title>
-      <link>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</link>
-      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/</guid>
-      <description>Project Page of VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</description>
     </item>
     
     <item>
