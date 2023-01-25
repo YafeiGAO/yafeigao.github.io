@@ -8,13 +8,13 @@
     <language>en</language>
     <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/hand-object-dataset/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Record of 3D Hand Pose Datasets with Object Interactions</title>
+      <title>Dataset Summary: 3D Hand Pose Datasets with Object Interactions</title>
       <link>https://yafeigao.github.io/post/datasets/</link>
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yafeigao.github.io/post/datasets/</guid>
       <description>A record of available 3D hand-object datasets.
-Relevant Datasets Hand Pose Datasets Hand Obejct Pose Datasets Table Name RGB Depth 3D keypoints Hand Mask Object Object Mask Real/Syn License HOP Yes No Yes Yes Yes Yes Syn &amp;ndash; RHD Yes Yes Yes Yes Yes No Syn &amp;ndash; STB Yes Yes Yes No No No Real &amp;ndash; D+O Yes Yes Yes No Yes No Real &amp;ndash; Contact Concerning questions regarding to the dataset, please contact Yafei Gao (yafei.</description>
+Relevant Datasets Dataset used for training 3D hand-object pose estimation are listed below.</description>
     </item>
     
     <item>
