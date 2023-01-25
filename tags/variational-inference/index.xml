@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variational Inference on Website of Yafei Gao</title>
+    <link>https://yafeigao.github.io/tags/variational-inference/</link>
+    <description>Recent content in Variational Inference on Website of Yafei Gao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/variational-inference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</title>
+      <link>https://yafeigao.github.io/post/3d-hand-pose-datasets-with-objects/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/post/3d-hand-pose-datasets-with-objects/</guid>
+      <description>Project Page of VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Yafei Gao | A Record of 3D Hand Pose Datasets with Object Interactions </title>
+    <title> Yafei Gao | VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -34,8 +34,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://yafeigao.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="A Record of 3D Hand Pose Datasets with Object Interactions"/>
-<meta name="twitter:description" content="Summary on Current 3D Hand Datasets"/>
+<meta name="twitter:title" content="VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image"/>
+<meta name="twitter:description" content="Project page of Variational Object-aware 3D Hand Pose from a Single RGB Image"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -116,84 +116,62 @@
         <div class="post-content">
 
             <div class="post-title">
-                <h3>A Record of 3D Hand Pose Datasets with Object Interactions</h3>
+                <h3>VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
-                        <span class="date">Tue, Apr 20, 2021</span>
+                        <span class="date">Sat, Jun 22, 2019</span>
                         <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">One-minute read</span>
+                        <span class="reading-time">2-minute read</span>
                     </div>
                 
             </div>
 
-            <p>A record of available 3D hand-object datasets.</p>
-<h2 id="relevant-datasets">Relevant Datasets</h2>
-<p><img src="../../images/inpainting_einstein.gif" alt="Inpainting_Albert Einstein"></p>
-<h3 id="hand-pose-datasets">Hand Pose Datasets</h3>
-<h3 id="hand-obejct-pose-datasets">Hand Obejct Pose Datasets</h3>
-<h2 id="table">Table</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Name</th>
-<th style="text-align:center">RGB</th>
-<th style="text-align:center">Depth</th>
-<th style="text-align:center">3D keypoints</th>
-<th style="text-align:center">Hand Mask</th>
-<th style="text-align:center">Object</th>
-<th style="text-align:center">Object Mask</th>
-<th style="text-align:center">Real/Syn</th>
-<th style="text-align:center">License</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">HOP</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Syn</td>
-<td style="text-align:center">&ndash;</td>
-</tr>
-<tr>
-<td style="text-align:center">RHD</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Syn</td>
-<td style="text-align:center">&ndash;</td>
-</tr>
-<tr>
-<td style="text-align:center">STB</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Real</td>
-<td style="text-align:center">&ndash;</td>
-</tr>
-<tr>
-<td style="text-align:center">D+O</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Real</td>
-<td style="text-align:center">&ndash;</td>
-</tr>
-</tbody>
-</table>
+            <p>Project Page of VO-handpose: Variational Object-aware 3D Hand Pose from a Single RGB Image</p>
+<p>This work has been accepted in <em>IROS 2019</em> - <em>jointly presented in IEEE Robotics and Automation Letters</em></p>
+<p><strong><a href="https://www.linkedin.com/in/yafei-gao-0900a0131/?originalSubdomain=de">Yafei Gao</a>, <a href="https://wangyida.github.io/#about">Yida Wang</a>, <a href="http://campar.in.tum.de/Main/NassirNavab">Nassir Navab</a> and <a href="http://campar.in.tum.de/Main/FedericoTombari">Federico Tombari</a></strong>.</p>
+<p><strong>| <a href="https://ieeexplore.ieee.org/document/8770083">Paper</a> |        <a href="https://github.com/wangyida/VO-handpose">Code</a> |
+<a href="https://youtu.be/tSTQ2NTqB4A">Video</a> |</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="abstract">Abstract</h2>
+<p><img src="../../images/vo-hand.png" alt="VO-handpose"></p>
+<p>We propose an approach to estimate the 3D pose of a human hand while grasping objects from a single RGB image. Our approach is based on a probabilistic model implemented with deep architectures, which is used for regressing, respectively, the 2D hand joints heat maps and the 3D hand joints coordinates. We train our networks so to make our approach robust to large object- and self-occlusions, as commonly occurring with the task at hand. Using specialized latent variables, the deep architecture internally infers the category of the grasped object so to enhance the 3D reconstruction, based on the underlying assumption that objects of a similar category, i.e. with similar shape and size, are grasped in a similar way. Moreover, given the scarcity of 3D hand-object manipulation benchmarks with joint annotations, we propose a new annotated synthetic dataset with realistic images, hand masks, joint masks and 3D joints coordinates. Our approach is flexible as it does not require depth information, sensor calibration, data gloves, or finger markers. We quantitatively evaluate it on synthetic datasets achieving stateof-the-art accuracy, as well as qualitatively on real sequences.</p>
+<h2 id="dataset">Dataset</h2>
+<h4 id="despriction">Despriction</h4>
+<p>This dataset provides 11020 samples. Each sample provides:</p>
+<pre><code>+ RGB image (320x320 pixels); 
++ Segmentation mask (320x320 pixels) for hand
++ Segmentation mask (320x320 pixels) for object 
++ 21 Keypoints with 2D and 3D coordinates
++ Intrinsic Camera Matrix
+</code></pre>
+<p>It was created with freely accessible character from <em>MakeHuman</em> and rendered with <a href="www.blender.org">Blender</a></p>
+<h4 id="download">Download</h4>
+<p>You can find download.py from <a href="https://github.com/wangyida/VO-handpose/blob/master/download.py">here</a>,  then run it under your data folder:</p>
+<pre><code>python download.py -o ./&lt;DATA FOLDER&gt;/
+</code></pre>
+<h4 id="file-structures">File structures</h4>
+<p>After unziping <em>SynGraspHand.zip</em>, you will find our dataset in the following structure:</p>
+<pre><code>./                          : Root folder
+./images                    : Color images
+./mask_hand                 : Segmentation masks for hand
+./mask_object               : Segmentation masks for object
+./annotations.mat           : Key point annotations and camera matrices
+</code></pre>
+<h2 id="citation">Citation</h2>
+<p>Please consider cite VO-handpose for 3D hand pose estimation if you find it helpful.</p>
+<pre><code>@article{gao2019variational,
+  title={Variational Object-Aware 3-D Hand Pose From a Single RGB Image},
+  author={Gao, Yafei and Wang, Yida and Falco, Pietro and Navab, Nassir and Tombari, Federico},
+  journal={IEEE Robotics and Automation Letters},
+  volume={4},
+  number={4},
+  pages={4239--4246},
+  year={2019},
+  publisher={IEEE}
+}
+</code></pre>
 <h2 id="contact">Contact</h2>
 <p>Concerning questions regarding to the dataset, please contact Yafei Gao (<a href="mailto:yafei.gao@gmx.de">yafei.gao@gmx.de</a>)</p>
 
@@ -201,7 +179,7 @@
         <div class="post-footer">
             <div class="info">
                 
-                <span class="separator"><a class="tag" href="/tags/hand-object-dataset/">Hand-Object Dataset</a><a class="tag" href="/tags/3d-hand-pose-estimation/">3D Hand Pose Estimation</a></span>
+                <span class="separator"><a class="tag" href="/tags/3d-pose-estimation/">3D Pose Estimation</a><a class="tag" href="/tags/hand-object-dataset/">Hand-Object Dataset</a><a class="tag" href="/tags/variational-inference/">Variational Inference</a><a class="tag" href="/tags/metric-learning/">Metric Learning</a></span>
 
             </div>
         </div>
