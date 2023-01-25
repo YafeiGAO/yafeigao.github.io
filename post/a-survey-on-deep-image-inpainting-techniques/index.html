@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Yafei Gao | A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill_v2 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Design is where science and art break even.">
+    
+    <link rel="stylesheet"
+          href="https://yafeigao.github.io/css/style.min.ee660ba8d69bc4ac1dee44ba152a17bb18096f21c21645fa172af75b1b794e80.css"
+          integrity="sha256-7mYLqNabxKwd7kS6FSoXuxgJbyHCFkX6Fyr3Wxt5ToA="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://yafeigao.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://yafeigao.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://yafeigao.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://yafeigao.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://yafeigao.github.io/post/a-survey-on-deep-image-inpainting-techniques/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://yafeigao.github.io/js/anatole-header.min.a3fa728a9f57833a31dfb45c48caaf1e4890c8c97f07bd7133fc2359745edb5d.js"
+            integrity="sha256-o/pyip9Xgzox37RcSMqvHkiQyMl/B71xM/wjWXRe210="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yafeigao.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill_v2"/>
+<meta name="twitter:description" content="Review on Free-Form Image Inpainting with Gated Convolution"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://yafeigao.github.io/images/IMG_0208.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">Hi, I&#39;m Yafei Gao:)</a></h3>
+            <div class="description">
+                <p>Design is where science and art break even.</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/yafei-gao-0900a0131/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/YafeiGAO" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:yafei.gao@gmx.de" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Yafei Gao 2023 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill_v2</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Tue, Dec 1, 2020</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">6-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>A Survey on Image Inpainting Techniques: from Context Encoder to Deepfill_v2</p>
+<h2 id="what-is-image-inpainting">What is image inpainting?</h2>
+<p>Inpainting is a process of reconstructing lost or damaged parts of images. It is an intersection field. among image understanding, image generation, and image editing. Very common uses nowadays of inpainting are old picture or film restoration and object removal for example test, watermark, red eye, etc. It could also be observed in applications like image compression and super-resolution.</p>
+<p><img src="../../images/inpainting_einstein.gif" alt="Inpainting_Albert Einstein"></p>
+<h2 id="traditional-methods">Traditional Methods</h2>
+<p>In the very beginning, people complete images with holes and missing parts using traditional methods based on optimization or greedy algorithm. Most of the traditional inpainting approaches can be divided into two different categories: diffusion-based approach and exemplar-based approach.</p>
+<h4 id="diffusion-based-approaches">Diffusion-based Approaches</h4>
+<p>Diffusion-based approach propagates the known information to the missing area starting from their boundary. The data propagation process follows the partial differential equation. Diffusion-based approaches are still applied in the python package Scikit-Image.</p>
+<p><img src="../../images/db2.png" alt="Structure"></p>
+<h4 id="patch-based-approaches">Patch-based Approaches</h4>
+<p>Patch-based approaches fill missing parts by exchanging information between image patches. It forces unknown values in one patch to be similar to known ones in the other. The picture shows a classic patch-based inpainting approach.</p>
+<p>Its inpainting process can be divided into 3 steps: We first calculate weights on the contour of the missing area and select the contour point with the largest weight as the interested point. In the top left image, the intersection point of the missing area contour and yellow-blue separating line is the interested point with largest weight. Then we take a patch with a certain size around the selected point P. In the third step, we calculate and find the nearest neighbor patch: Then we copy the part of the nearest neighbor patch then repeat the above steps until all points (patches) are filled. Now, We can also find this kind of inpainting approach in OpenCV, Paint3d, and Photoshop. As we can imagine the search algorithm may be time-consuming and these approaches often fail in situations like semantic filling, complex scenes, and large missing holes.</p>
+<p><img src="../../images/patchbased.png" alt="Structure"></p>
+<h2 id="deep-generative-models">Deep Generative Models</h2>
+<p>From 2000 to 2016, there are around 30 main traditional inpainting algorithms accpected by CVPR, TIP, etc. When deep learning involved, things were changed. We can find 13 deep learning based inpainting papers were accepted by only ICCV in 2019.</p>
+<h3 id="from-context-encoder-to-deepfill_v2">From Context Encoder to Deepfill_v2</h3>
+<p>If you want to work on an image in-painting program, I’m sure you have heard about deepfill_v2. At least, you must have played around on their program website.</p>
+<p>Deepfill_v2 is published by JiahuiYu in ICCV 2019. As the author said, she was inspired by many classical deep generative inpainting models. Therefore, to understand the background and algorithms involved in the paper and code, the algorithm structure I summarized below may give you some hints. From there you can see how amazingly the scientists and researchers explore the magic image in-painting world by standing on the shoulders of giants.</p>
+<p><img src="../../images/new_structure.png" alt="Structure"></p>
+<p>Now let&rsquo;s start from the bottom:)</p>
+<h4 id="context-encoder">Context Encoder</h4>
+<p>Context Encoder is the first Generative Adversarial Networks (GANs) based inpainting algorithm. It has been regarded as a baseline of inpainting algorithms for quite a long time. The core idea of Context Encoder is channel-wise fully connected structure. Different from standard fully connected layer, in channel wise fully connected structure, each feature map is only fully connected to itself, not connected to other feature map.</p>
+<p><img src="../../images/ContextEncoder.png" alt="Structure"></p>
+<h4 id="dilated-convolution">Dilated Convolution</h4>
+<p>Since then, more and more GAN-based inpainting algorithms have been published. One milestone work is globally and locally consistent image completion.</p>
+<p>One highlight of this work is employing fully convolutional network with dilated convolution instead of fully connected layer between encoder and decoder.</p>
+<p>Why dilated Convolution?</p>
+<p>The largest benefit of employing dilated convolution is that it could increase receptive field. Let’s look at here, Locations p1 and p2 are inside the missing region where p1 is close to the boundary and p2 is roughly at the center point. If the receptive field is small, then the influencing region at location p1 can cover the valid region, which can help fill in the pixel at location p1. But the influencing region at location p2 cannot cover the valid region, hence no information from valid region can be used for generation. That’s why we need a larger respective field in inpainting work.</p>
+<p>In short, dilated convolution increases the receptive field without adding additional parameters by skipping consecutive spatial locations.</p>
+<p><img src="../../images/whydilated.png" alt="Structure"></p>
+<h4 id="globally-and-locally-consistent-image-completion">Globally and Locally Consistent Image Completion</h4>
+<p>As a milestone work in image in-painting arear, the main motivation of Globally and Locally Consistent Image Completion is to figure out how to apply local and global consistency in inpainting work. The structure with two discriminators is the answer. One discriminator looks at the whole image in a global sense while another one looks at the sub-image around the filled region in a local sense.</p>
+<p><img src="../../images/glcic.png" alt="Structure"></p>
+<h4 id="contextual-attention-mechanism-deepfill_v1">Contextual Attention Mechanism (Deepfill_v1)</h4>
+<p>Core ideas:  Contextual Attention Mechanism learns where to borrow or copy contextual information from known background patches.</p>
+<p>Input of contextual layer is feature maps with several channels, let’s say 64 channels. In this feature maps, we can find generated features in the missing region colored in blue, and features in the known region colored in orange. Let’s extract the blue one first, let’s say the shape of this tensor is 64×64×64. Then we divided the orange part into 128 small feature patches with size 64×3×3. Then, we regard these small features patches as kernel and perform convolution using each of these patches and the blue generated features inside the missing region to get a new feature tensor with size of 128×64×64.</p>
+<p>This new tensor has 128 channels. Each channel represents a similarity between one feature patch in known regions and all generated features from missing regions. When we look along the channel dimension, the 128 elements represent the similarities between all the known patches and one particular location inside the missing region. So for each pixel/ feature element in the missing region, we can find the most contextually similar feature patches according to the attention score after softmax normalization. Then we know where to borrow information for each missing pixel. Now let’s back to the structure, The attention map color coding is used to visualize the attention map. For example, the middle white color means the pixel focuses on itself, pink means the pixel focuses on the bottom-left region, green on the top-right region, etc. You can see that this example has a pink-filled attention map. This means that the filled region mostly borrows information from the bottom-left region.</p>
+<p><img src="../../images/ContextualAttentionMechanism.png" alt="Structure"></p>
+<h4 id="partial-convolution--gated-convolution">Partial Convolution &amp; Gated Convolution</h4>
+<p>Mask in partial convolution is only defined by the mask from the previous layer. While in gated convolution, the mask is updated by both, by mask and feature from the previous step. In this case, a standard convolutional layer followed by a sigmoid activation function is applied here. With the help of the sigmoid activation function, all the values would fall into [0, 1] which can also indicate the validness of each local area. The output is the element-wise multiplication of the outputs of two standard convolutional layers, one is learning image features, another one is learning to update the mask.</p>
+<p><img src="../../images/compare.png" alt="Structure"></p>
+<h3 id="deepfill_v2">Deepfill_v2</h3>
+<p>We can find gated convolution, dilated gated convolution, and contextual attention layers in its structure. It includes two generators, one for coarse inpainting, one for refining inpainting, and one discriminator. Spectral Normalization is applied to the discriminator to stabilize the training process.</p>
+<p><img src="../../images/deepfillv2.png" alt="Structure"></p>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://arxiv.org/abs/1806.03589">Free-Form Image Inpainting with Gated Convolution</a></li>
+<li><a href="https://towardsdatascience.com/10-papers-you-must-read-for-deep-image-inpainting-2e41c589ced0">10 Papers You Must Read for Deep Image Inpainting</a></li>
+</ol>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/image-inpainting/">Image Inpainting</a><a class="tag" href="/tags/image-processing/">Image Processing</a><a class="tag" href="/tags/general-adversarial/">General Adversarial</a></span>
+
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/jquery.min.decb4e8fdab5cb7b76ec6470b6fb73d30c7ee8e248d7486f49007f3c525b7acb.js"
+        integrity="sha256-3stOj9q1y3t27GRwtvtz0wx&#43;6OJI10hvSQB/PFJbess="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/bundle.min.3ebad6bf39b2e7c2f899d3ed9bc97e8c0c1ead7a1b57472e3387321f673b8077.js"
+        integrity="sha256-PrrWvzmy58L4mdPtm8l&#43;jAwerXobV0cuM4cyH2c7gHc="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/medium-zoom.min.e1c6918cbaa90022a5612f0bd71c7bf3be6d036614c5729cebfe14f7b91fa4bc.js"
+        integrity="sha256-4caRjLqpACKlYS8L1xx7875tA2YUxXKc6/4U97kfpLw="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

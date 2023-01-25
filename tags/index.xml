@@ -5,7 +5,53 @@
     <link>https://yafeigao.github.io/tags/</link>
     <description>Recent content in Tags on Website of Yafei Gao</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Hand Pose Estimation</title>
+      <link>https://yafeigao.github.io/tags/3d-hand-pose-estimation/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/3d-hand-pose-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hand-Object Dataset</title>
+      <link>https://yafeigao.github.io/tags/hand-object-dataset/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/hand-object-dataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>General Adversarial</title>
+      <link>https://yafeigao.github.io/tags/general-adversarial/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/general-adversarial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Inpainting</title>
+      <link>https://yafeigao.github.io/tags/image-inpainting/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/image-inpainting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Processing</title>
+      <link>https://yafeigao.github.io/tags/image-processing/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>index</title>
       <link>https://yafeigao.github.io/tags/index/</link>
