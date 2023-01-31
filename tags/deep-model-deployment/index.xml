@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Model Deployment on Website of Yafei Gao</title>
+    <link>https://yafeigao.github.io/tags/deep-model-deployment/</link>
+    <description>Recent content in Deep Model Deployment on Website of Yafei Gao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/deep-model-deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Environment Setup for Deployment: NVIDIA &#43; Tensorflow-GPU </title>
+      <link>https://yafeigao.github.io/post/deployment/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/post/deployment/</guid>
+      <description>Record on one hobby work:)
+Background Hardware: Jetson Nano
+Flash/Re-flash After flashing with JetPack 4.</description>
+    </item>
+    
+  </channel>
+</rss>

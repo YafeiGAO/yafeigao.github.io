@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Yafei Gao | Environment Setup for Deployment: NVIDIA &#43; Tensorflow-GPU  </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Design is where science and art break even.">
+    
+    <link rel="stylesheet"
+          href="https://yafeigao.github.io/css/style.min.ee660ba8d69bc4ac1dee44ba152a17bb18096f21c21645fa172af75b1b794e80.css"
+          integrity="sha256-7mYLqNabxKwd7kS6FSoXuxgJbyHCFkX6Fyr3Wxt5ToA="
+          crossorigin="anonymous"
+          type="text/css"><link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://yafeigao.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://yafeigao.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://yafeigao.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://yafeigao.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://yafeigao.github.io/post/deployment/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://yafeigao.github.io/js/anatole-header.min.a3fa728a9f57833a31dfb45c48caaf1e4890c8c97f07bd7133fc2359745edb5d.js"
+            integrity="sha256-o/pyip9Xgzox37RcSMqvHkiQyMl/B71xM/wjWXRe210="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yafeigao.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Environment Setup for Deployment: NVIDIA &#43; Tensorflow-GPU "/>
+<meta name="twitter:description" content="Record on one hobby work"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://yafeigao.github.io/images/IMG_0208.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">Hi, I&#39;m Yafei Gao:)</a></h3>
+            <div class="description">
+                <p>Design is where science and art break even.</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/yafei-gao-0900a0131/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/YafeiGAO" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:yafei.gao@gmx.de" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Yafei Gao 2023 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Environment Setup for Deployment: NVIDIA &#43; Tensorflow-GPU </h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Sun, Jan 2, 2022</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">4-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>Record on one hobby work:)</p>
+<h2 id="background">Background</h2>
+<p>Hardware: Jetson Nano</p>
+<h2 id="flashre-flash">Flash/Re-flash</h2>
+<p>After flashing with JetPack 4.5.1 using NVIDIA SDK Manager</p>
+<p>| Ubuntu |  18.04  |<br>
+| Python |  3.6.8 |<br>
+| CUDA |  10.2 |<br>
+| CuDNN |   8.0 |<br>
+| TensorRT  |  7.1.1 |<br>
+| OpenCV  |  4.1.2 |<br>
+| GCC  |  7.5.1 |</p>
+<h2 id="tensorflow-gpu-c-api">TensorFlow-GPU C++ API</h2>
+<h3 id="overview">Overview</h3>
+<ol>
+<li>
+<p>Bazel is a necessary build tool for TensorFlow C++ API. Please find a proper Bazel version according to the table below.</p>
+</li>
+<li>
+<p>Java: don&rsquo;t forget Java (JDK11) for installing Bazel 3.1.0: sudo apt-get install openjdk-11-jdk</p>
+</li>
+<li>
+<p>Since Bazel with version 0.xx.x is too old to guarantee any succeed on building TensorFlow, here we chose using Bazel 3.1.0 to build TensorFlow-GPU 2.3.1. At meantime, the required Python, CUDA, CuDNN and GCC are very close to the current ones on the Jetson.</p>
+</li>
+<li>
+<p>Table of tested build configuration:</p>
+</li>
+</ol>
+<h3 id="preparation">Preparation</h3>
+<h4 id="bazel-installation">Bazel Installation</h4>
+<p>Download Bazel and unzip it:</p>
+<pre><code>wget https://github.com/bazelbuild/bazel/releases/download/3.1.0/bazel-3.1.0-dist.zip
+unzip -d bazel bazel-3.1.0-dist.zip and change directory: cd bazel
+</code></pre>
+<p>Run the command for building Bazel:
+Change directory:</p>
+<pre><code>cd bazel 
+</code></pre>
+<p>Start the build:</p>
+<pre><code>env EXTRA_BAZEL_ARGS=&quot;--host_javabase=@local_jdk//:jdk&quot; bash ./compile.sh
+</code></pre>
+<p>Copy the binaries:</p>
+<pre><code>sudo cp output/bazel /usr/local/bin/bazel
+</code></pre>
+<p>Clean up:</p>
+<pre><code>rm bazel-3.1.0-dist.zip
+sudo rm -rf bazel
+</code></pre>
+<h4 id="protobuf-installation-build-from-source">Protobuf Installation: build from source</h4>
+<p>Download Protobuf with proper version → check the version in path_to_tensorflow/tensorflow/workspace.bzl
+build from source:</p>
+<pre><code>./autogen.sh
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+</code></pre>
+<p>Verify the installation</p>
+<pre><code>protoc --version
+</code></pre>
+<h3 id="configuration">Configuration</h3>
+<h4 id="download-tensorflow-23">Download TensorFlow 2.3</h4>
+<p>Get libs from Github</p>
+<pre><code>git clone https://github.com/tensorflow/tensorflow.git
+</code></pre>
+<p>and switch to the released branch r.2.3</p>
+<p>Change the directory to the folder you just downloaded using wget or git clone:</p>
+<pre><code>cd tensorflow
+</code></pre>
+<h4 id="configure-the-environment">Configure the environment</h4>
+<p>Run the command below</p>
+<pre><code>./configure
+</code></pre>
+<p>Configuration started:</p>
+<pre><code>Specify the version of python by entering: /usr/bin/python3.6
+Specify the path to python libraries: (the default path is correct, no need to enter anything, just press Enter)
+Do you wish to build TensorFlow with OpenCL SYCL support? N
+Do you wish to build TensorFlow with ROCm support? N
+Do you wish to build TensorFlow with CUDA support? Y
+Do you wish to build TensorFlow with TensorRT support? Y
+Check if CUDA, CuDNN, TensorRT are well found automatically
+Specify the compute capabilities. 7.2 → Find the proper capabilities for your device here: https://developer.nvidia.com/cuda-gpus)
+Do you want to use clang as CUDA compiler? N
+Specify GCC path: (the default one is correct, no need to enter anything, just press Enter)
+Specify optimization flags to use during compilation: (default options are fine, no need to enter anything, just press Enter)
+Would you like to interactively configure ./WORKSPACE for Android builds? N
+</code></pre>
+<h3 id="build-tensorflow-c-api-from-scratch">Build TensorFlow C++ API from scratch:</h3>
+<p>Run the command and wait for the building process completed:</p>
+<pre><code>sudo bazel build --config=cuda --config=noaws -c opt //tensorflow:libetensorflow_cc //tensorflow:install_headers
+</code></pre>
+<p>Copy <em>.so files</em> under  <em>bazel-bin/tensorflow</em> to <em>/usr/local/lib</em></p>
+<p>Copy the folder <em>./tensorflow</em> to  <em>/usr/local/include/</em></p>
+<h3 id="potential-errors">Potential Errors</h3>
+<p>Error relative to <em>Abseil</em>:</p>
+<pre><code>fatal error: absl/strings/string_view.h: no such file or directory
+</code></pre>
+<p>Solution: install abseil and claim the  folder path in CMakeLists.txt</p>
+<p>Error relative to <em>Eigen3</em>:</p>
+<pre><code>fatal error:  unsupported/Eigen/CXX11/Tensor: no such file or directory
+</code></pre>
+<p>Solution: install eigen (check version in workspace.bzl) and claim the folder path to in CMakeLists.txt</p>
+<p>Error relative to <em>Protobuf</em>:</p>
+<pre><code>fatal error: tensorflow/core/framework/types.pb.h: no such file or directory
+</code></pre>
+<p>Solution: add &lsquo;include_directories(${TENSORFLOW_DIR}/bazel-bin&rsquo; in CMakeLists.txt</p>
+<h3 id="notes">Notes</h3>
+<h4 id="gcc">GCC</h4>
+<p>There is no big difference between GCC 7.3.x and GCC 7.5.x. Downgrading GCC from 8 to 7 is possible, while downgrading it from 7.5 to 7.3 is quiet painful and may break some connections with other libraries.</p>
+<h4 id="tensorrt">TensorRT</h4>
+<p>The version of TensorRT is easily being ignored since you can not find TensorRT on the Table. TensorRT 8 is not compatible with building TensorFlow-GPU 2.3, 2,4 or 2.5. The issue has been raised on GitHub in May 2021: <a href="https://github.com/tensorflow/tensorflow/issues/49150">https://github.com/tensorflow/tensorflow/issues/49150</a>. The easiest solution is downgrading TensorRT 8 to TensorRT 7 by re-flashing the Jetson Xavier with JetPack 4.5.1</p>
+<h4 id="building-process">Building process</h4>
+<p>The whole building process takes pretty long time. It took 10hours on our Jetson AGX Xavier, may take more than 20hours on a Jetson Nano.</p>
+<h4 id="tensorflow-2x-c-api">Tensorflow 2.x C++ API</h4>
+<p>Since tensorflow2.2, the folder structure of tensorflow source code has been changed, which means most of online available guidance (focusing on tensorflow1.x) does not fit our case. At the same time, building tensorflow 1.x on the jetson device needs JetPack 4.2 or lower, which is not available on the SDK Manager any longer. JetPack 4.5 is the oldest JetPack version availble for Jetson AGX Xavier via SDK Manager.</p>
+<h4 id="sdk-manager">SDK Manager</h4>
+<p>When the NVIDIA SDK Manager you&rsquo;re using is not the latest one, don&rsquo;t get confused if any unstable issues ( network connection may not be properly detected and so on) occurred. Updating the SDK Manager and then selecting the JetPack you want may help.</p>
+<h2 id="contact">Contact</h2>
+<p>Concerning questions regarding to deployment process, please contact Yafei Gao (<a href="mailto:yafei.gao@gmx.de">yafei.gao@gmx.de</a>)</p>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/embedded-system/">Embedded System</a><a class="tag" href="/tags/nvidia-jetson/">NVIDIA Jetson</a><a class="tag" href="/tags/deep-model-deployment/">Deep Model Deployment</a></span>
+
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/jquery.min.decb4e8fdab5cb7b76ec6470b6fb73d30c7ee8e248d7486f49007f3c525b7acb.js"
+        integrity="sha256-3stOj9q1y3t27GRwtvtz0wx&#43;6OJI10hvSQB/PFJbess="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/bundle.min.3ebad6bf39b2e7c2f899d3ed9bc97e8c0c1ead7a1b57472e3387321f673b8077.js"
+        integrity="sha256-PrrWvzmy58L4mdPtm8l&#43;jAwerXobV0cuM4cyH2c7gHc="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://yafeigao.github.io/js/medium-zoom.min.e1c6918cbaa90022a5612f0bd71c7bf3be6d036614c5729cebfe14f7b91fa4bc.js"
+        integrity="sha256-4caRjLqpACKlYS8L1xx7875tA2YUxXKc6/4U97kfpLw="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

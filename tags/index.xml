@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Website of Yafei Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Model Deployment</title>
+      <link>https://yafeigao.github.io/tags/deep-model-deployment/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/deep-model-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded System</title>
+      <link>https://yafeigao.github.io/tags/embedded-system/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/embedded-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NVIDIA Jetson</title>
+      <link>https://yafeigao.github.io/tags/nvidia-jetson/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yafeigao.github.io/tags/nvidia-jetson/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>3D Hand Pose Estimation</title>
       <link>https://yafeigao.github.io/tags/3d-hand-pose-estimation/</link>
