@@ -8,14 +8,13 @@
     <language>en</language>
     <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yafeigao.github.io/tags/embedded-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Environment Setup for Deployment: NVIDIA &#43; Tensorflow-GPU </title>
+      <title>Environment Setup for Deep Model Deployment: NVIDIA &#43; Tensorflow-GPU </title>
       <link>https://yafeigao.github.io/post/deployment/</link>
       <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yafeigao.github.io/post/deployment/</guid>
       <description>Record on one hobby work:)
-Background Hardware: Jetson Nano
-Flash/Re-flash After flashing with JetPack 4.</description>
+&amp;ldquo;Environment Setup for Deep Model Deployment: NVIDIA + Tensorflow-GPU&amp;rdquo;</description>
     </item>
     
   </channel>
